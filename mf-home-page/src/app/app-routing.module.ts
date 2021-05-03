@@ -1,20 +1,23 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmptyComponent } from './empty/empty.component';
+import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
 const routes: Routes = [
   {
     path: 'home-page/welcome',
-    loadChildren: () => import('./welcome/welcome.module').then(m => m.WelcomeModule)
+    loadChildren: () =>
+      import('./welcome/welcome.module').then((m) => m.WelcomeModule),
   },
   {
     path: '**',
-    component: EmptyComponent
-  }
+    component: EmptyRouteComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

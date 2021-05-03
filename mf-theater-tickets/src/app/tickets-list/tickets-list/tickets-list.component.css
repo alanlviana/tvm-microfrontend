@@ -1,0 +1,10 @@
+.screenArea {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  background-color: blue;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

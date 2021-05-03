@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@angular-microfrontends/root-config": "https://localhost:9000/angular-microfrontends-root-config.js",
+    "@my-tvm/mf-home-page/": "http://localhost:4200/main.js",
+    "@my-tvm/mf-music-concert-tickets/": "http://localhost:4300/main.js",
+    "@my-tvm/mf-theater-tickets/": "http://localhost:4400/main.js"
+  }
+}

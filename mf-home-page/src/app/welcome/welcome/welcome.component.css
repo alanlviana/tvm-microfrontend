@@ -1,0 +1,11 @@
+.screenArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #c1c1c1;
+  height: 600px;
+  color: #ac0c14;
+
+  font-size: 30px;
+}
